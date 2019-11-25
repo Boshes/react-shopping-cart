@@ -12,7 +12,7 @@ function App(props) {
         <Navbar />
         <Switch>
           <Route exact path="/" component={ProductList} />
-          <Route path="/my-cart" component={Cart} />
+          <Route path="/cart" component={Cart} />
         </Switch>
       </div>
     </BrowserRouter>
