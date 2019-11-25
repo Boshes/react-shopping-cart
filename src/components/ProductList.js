@@ -9,9 +9,14 @@ class ProductList extends Component {
         <h2>Product List</h2>
         <br/>
         <div className="row">
-          <Product />
-          <Product />
-          <Product />
+          {
+            this.props.products.map(product =>
+              <Product
+                product={product}
+                key={product.id}
+              />
+            )
+          }
         </div>
       </div>
     )
